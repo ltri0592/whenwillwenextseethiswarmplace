@@ -1,0 +1,504 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.back {
+    z-index: -1;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 78%;
+    top: 67px;
+    right: 160px;
+}
+
+.decoration {
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 78%;
+    top: 7px;
+    right: 160px;
+}
+
+.darkborder {
+    z-index: 7;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: -25px;
+}
+
+.toyota {
+    z-index: 8;
+    position: absolute;
+    top: 162px;
+    right: 284px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+
+.mcqueen {
+    z-index: 0;
+    position: absolute;
+    top: 400px;
+}
+
+.map {
+    z-index: 1;
+    position: absolute;
+    top: 69.2%;
+    left: 24.4%;
+    width: 7.5%;
+}
+
+.meter {
+    z-index: 3;
+    position: absolute;
+    top: 56%;
+    right: 18%;
+    width: 9%;
+}
+
+.banana {
+    display: none;
+    z-index: 6;
+    position: absolute;
+    width: 300%;
+}
+
+.butterfly {
+    display: none;
+    z-index: 6;
+    position: absolute;
+    width: 200%;
+}
+
+.toyota:hover .banana {
+    display: block;
+    top: 65%;
+    right:20%;
+}
+
+.toyota:hover .butterfly {
+    display: block;
+    top: 450%;
+    left: 25%;
+}
+
+
+
+.slanggroup{
+    z-index: 6;
+}
+
+.slang {
+    font-size: 0.8em;
+    color: #Be00FF;
+}
+
+.slang:nth-child(1){
+    animation-name: fade;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate-reverse; 
+    position: absolute;
+    top: 23%;
+    right: 30%; 
+}
+  
+  
+.slang:nth-child(2){
+    animation-name: fade;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    position: absolute;
+    animation-delay: 3s;
+    top: 70%;
+    right: 35%; 
+}
+
+.slang:nth-child(3){
+    animation-name: fade;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate-reverse; 
+    position: absolute;
+    top: 70%;
+    right: 45%;  
+}
+  
+  
+.slang:nth-child(4){
+    animation-name: fade;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    position: absolute;
+    top: 80%;
+    right: 60%; 
+}
+
+.slang:nth-child(5){
+    animation-name: fade;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate-reverse; 
+    animation-delay: 3s; 
+    position: absolute;
+    top: 60%;
+    left: 25%; 
+}
+  
+  
+.slang:nth-child(6){
+    animation-name: fade;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    position: absolute;
+    top: 35%;
+    right: 70%; 
+}
+
+.slang:nth-child(7){
+    animation-name: fade;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate-reverse; 
+    animation-delay: 3s;
+    position: absolute;
+    top: 83%;
+    left: 39.5%;  
+}
+  
+.slang:nth-child(8){
+    animation-name: fade;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    position: absolute;
+    top: 50%;
+    right: 25%; 
+}
+  
+@keyframes fade{
+    0%,50% {
+    opacity: 0;
+}
+    100%{
+    opacity: 1;
+    }
+}
+
+
+
+#scroll-container {
+    height: 90px;
+    overflow: hidden;
+    width: 20%;
+    position: absolute;
+    top: 300px;
+    left: 570px;
+}
+  
+#scroll-text {
+    height: 100%;
+    text-align: center;
+    color: white;
+    font-weight: 200;
+    
+    /* animation properties */
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    
+    -moz-animation: my-animation 120s linear infinite;
+    -webkit-animation: my-animation 120s linear infinite;
+    animation: my-animation 120s linear infinite;
+}
+  
+/* for Firefox */
+@-moz-keyframes my-animation {
+    from { -moz-transform: translateY(100%); }
+    to { -moz-transform: translateY(-100%); }
+}
+  
+/* for Chrome */
+@-webkit-keyframes my-animation {
+    from { -webkit-transform: translateY(100%); }
+    to { -webkit-transform: translateY(-100%); }
+}
+  
+@keyframes my-animation {
+    from {
+      -moz-transform: translateY(100%);
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%);
+    }
+    to {
+      -moz-transform: translateY(-100%);
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-1250%);
+    }
+}
+
+
+.snail {
+    z-index: 12;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 100px;
+}
+
+#warning {
+    position: absolute;
+    top: 50%;
+    left: -20%;
+    z-index: 13;
+}
+
+#warning2 {
+    position: absolute;
+    top: 50%;
+    left: -20%;
+    z-index: 13;
+}
+
+
+@media screen and (max-width: 1400px) {
+    .back {
+        display: none;
+    }
+
+    .decoration {
+        display: none;
+    }
+
+    .slang {
+        display: none;
+    }
+
+    #scroll-container {
+        display: none;
+    }
+
+    .darkborder {
+        display: none;
+    }
+
+    .map {
+        display: none;
+    }
+
+    .meter {
+        display: none;
+    }
+
+    .toyota {
+        display: none;
+    }
+
+    .mcqueen {
+        display: none;
+    }
+
+    .snail {
+        display: none;
+    }
+
+    #warning {
+        z-index: 13;
+        font-family: 'Times New Roman', Times, serif;
+        width: 20%;
+        color: blue;
+        font-weight: 20;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+}
+
+@media screen and (max-height: 650px) {
+    .back {
+        display: none;
+    }
+
+    .decoration {
+        display: none;
+    }
+
+    .slang {
+        display: none;
+    }
+
+    #scroll-container {
+        display: none;
+    }
+
+    .darkborder {
+        display: none;
+    }
+
+    .map {
+        display: none;
+    }
+
+    .meter {
+        display: none;
+    }
+
+    .toyota {
+        display: none;
+    }
+
+    .mcqueen {
+        display: none;
+    }
+
+    .snail {
+        display: none;
+    }
+
+    #warning {
+        z-index: 13;
+        font-family: 'Times New Roman', Times, serif;
+        width: 20%;
+        color: blue;
+        font-weight: 20;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+}
+
+@media screen and (min-height: 850px) {
+    .back {
+        display: none;
+    }
+
+    .decoration {
+        display: none;
+    }
+
+    .slang {
+        display: none;
+    }
+
+    #scroll-container {
+        display: none;
+    }
+
+    .darkborder {
+        display: none;
+    }
+
+    .map {
+        display: none;
+    }
+
+    .meter {
+        display: none;
+    }
+
+    .toyota {
+        display: none;
+    }
+
+    .mcqueen {
+        display: none;
+    }
+
+    .snail {
+        display: none;
+    }
+
+    #warning {
+        display: none;
+    }
+
+    #warning2 {
+        z-index: 13;
+        font-family: 'Times New Roman', Times, serif;
+        width: 20%;
+        color: blue;
+        font-weight: 20;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+}
+
+
+@media screen and (min-width: 1500px) {
+    .back {
+        display: none;
+    }
+
+    .decoration {
+        display: none;
+    }
+
+    .slang {
+        display: none;
+    }
+
+    #scroll-container {
+        display: none;
+    }
+
+    .darkborder {
+        display: none;
+    }
+
+    .map {
+        display: none;
+    }
+
+    .meter {
+        display: none;
+    }
+
+    .toyota {
+        display: none;
+    }
+
+    .mcqueen {
+        display: none;
+    }
+
+    .snail {
+        display: none;
+    }
+
+    #warning {
+        display: none;
+    }
+
+    #warning2 {
+        z-index: 13;
+        font-family: 'Times New Roman', Times, serif;
+        width: 20%;
+        color: blue;
+        font-weight: 20;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+}
